@@ -21,7 +21,7 @@ public class Produto {
         System.out.print("\tDigite a categoria do produto: ");
         String categoria = sc.next();
 
-        System.out.printf("\tO nome do produto %s, %s, o valor é R$ %.2f, a categoria é %s.ge",nome, descricao, valor, categoria);
+        System.out.printf("\tO nome do produto %s: %s, o valor é R$ %.2f, a categoria é %s.",nome, descricao, valor, categoria);
 
     }
 }
