@@ -15,11 +15,13 @@ public class Produto {
         System.out.print("\tDigite a descrição do produto: ");
         String descricao = sc.nextLine();
 
-        System.out.print("\tDigite a categoria do produto: ");
-        String categoria = sc.nextLine();
-
         System.out.print("\tDigite o valor do produto: ");
         double valor = sc.nextDouble();
+
+        sc.nextLine();
+
+        System.out.print("\tDigite a categoria do produto: ");
+        String categoria = sc.nextLine();
 
         System.out.printf("\tO nome do produto %s: %s, o valor é R$ %.2f, a categoria é %s.",nome, descricao, valor, categoria);
 
