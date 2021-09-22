@@ -38,10 +38,10 @@ public class Metodos {
         }
         return num1/num2;
     }
-    static Double lerNumero(String mensagem){
+    static double lerNumero(String mensagem){
         Scanner sc = new Scanner(System.in);
         System.out.print(mensagem);
-        Double numero = Double.parseDouble(sc.nextLine());
+        double numero = Double.parseDouble(sc.nextLine());
         return numero;
     }
 }
