@@ -9,7 +9,7 @@ public class Cadastro_max{
         String sobrenome = "";
 
         System.out.println("\t------------- Cadastro de clientes -------------\n");
-        System.out.println("\tBem-vindo, digite o número de clientes que você deseja cadastrar: ");
+        System.out.print("\tBem-vindo, digite o número de clientes que você deseja cadastrar: ");
         int max_clientes = sc.nextInt();
         sc.nextLine();
 
