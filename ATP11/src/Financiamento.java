@@ -19,10 +19,10 @@ _ O sistema deve encaminhar o usuário para o menu principal caso a resposta sej
  opção digitada for ‘S’ o sistema deve encerrar imprimindo uma mensagem de obrigado.*/
 
 public class Financiamento{
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         int opcao; 
-
+        
         System.out.println("--------------- Bradesco Financiamentos ----------------");
 
         do{
@@ -49,12 +49,32 @@ public class Financiamento{
                     System.out.println("\tCrédito Consignado");
                 break; 
                 default:
-                System.out.println("A opção escolhida é inválida!\n");
+                System.out.println("\nA opção escolhida é inválida!\n");
                 break;
             }
-        }while(opcao < 1 || opcao > 4);
+
+        }while(repete(opcao));
+                  
+    }
+
+    static boolean repete( int opcao){
+        char repete = 'S';
+           
+        if(opcao >= 1 && opcao <= 4){
+    
+            System.out.print("Digite V para voltar ao menu ou S para sair: ");
+            repete = sc.nextLine().toUpperCase().charAt(0);
             
-      
-       
+            if (repete == 'S'){
+                System.out.println("\tSaindo do menu...");
+                return false; // o usuário deseja sair
+            }else{
+                return true; // para qualuqer outro valor digitado ele volta para o menu
+            }
+
+        }else{
+            return true; // opcao inválida, logo o menu deve ser repetido
+        }
+     
     }
 }
