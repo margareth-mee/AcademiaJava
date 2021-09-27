@@ -29,6 +29,9 @@ public class Financiamento{
         System.out.println("\t 3 - Crédito Empresarial");
         System.out.println("\t 4 - Crédito Consignado");
         
+        System.out.print("Digite a opção desejada: ");
+        int opcao  = Integer.parseInt(sc.nextLine());
 
+       
     }
 }
