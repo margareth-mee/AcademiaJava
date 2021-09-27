@@ -26,35 +26,47 @@ public class Financiamento{
         System.out.println("--------------- Bradesco Financiamentos ----------------");
 
         do{
-            System.out.println("Opções disponíveis: ");
-            System.out.println("\t 1 - Crédito Pessoal");
-            System.out.println("\t 2 - Crédito Imobiliário");
-            System.out.println("\t 3 - Crédito Empresarial");
-            System.out.println("\t 4 - Crédito Consignado");
-            
-            System.out.print("Digite a opção desejada: ");
-            opcao  = Integer.parseInt(sc.nextLine());
-
-            switch(opcao){
-                case 1:
-                    System.out.println("\tCrédito Pessoal");
-                break; 
-                case 2:
-                    System.out.println("\tCrédito Imobiliário");
-                break; 
-                case 3:
-                    System.out.println("\tCrédito Empresarial");
-                break; 
-                case 4:
-                    System.out.println("\tCrédito Consignado");
-                break; 
-                default:
-                System.out.println("\nA opção escolhida é inválida!\n");
-                break;
-            }
+            imprimeOpcoes();
+            opcao = getNumber("Digite a opção desejada: ");
+            menu(opcao);
 
         }while(repete(opcao));
                   
+    }
+
+    static void imprimeOpcoes(){
+        System.out.println("Opções disponíveis: ");
+        System.out.println("\t 1 - Crédito Pessoal");
+        System.out.println("\t 2 - Crédito Imobiliário");
+        System.out.println("\t 3 - Crédito Empresarial");
+        System.out.println("\t 4 - Crédito Consignado");
+    }
+
+        static int getNumber(String mensagem){
+            System.out.print(mensagem);
+            int opcao  = Integer.parseInt(sc.nextLine());
+            
+            return opcao;
+        }
+
+    static void menu( int opcao){
+        switch(opcao){
+            case 1:
+                System.out.println("\tCrédito Pessoal");
+            break; 
+            case 2:
+                System.out.println("\tCrédito Imobiliário");
+            break; 
+            case 3:
+                System.out.println("\tCrédito Empresarial");
+            break; 
+            case 4:
+                System.out.println("\tCrédito Consignado");
+            break; 
+            default:
+            System.out.println("\nA opção escolhida é inválida!\n");
+            break;
+        }
     }
 
     static boolean repete( int opcao){
@@ -64,9 +76,8 @@ public class Financiamento{
         if(opcao >= 1 && opcao <= 4){
     
             do{
-                System.out.print("Digite V para voltar ao menu ou S para sair: ");
-                repete = sc.nextLine().toUpperCase().charAt(0);
-
+                repete = getChar("Digite V para voltar ao menu ou S para sair: ");
+                
                 switch(repete){
                     case 'S':
                         System.out.println("\tSaindo do menu...");
@@ -87,4 +98,11 @@ public class Financiamento{
 
      return continua;
     }
+
+    static char getChar(String mensagem){
+        System.out.print(mensagem);
+        char repete = sc.nextLine().toUpperCase().charAt(0);
+        return repete;
+    }
+
 }
