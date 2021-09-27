@@ -59,22 +59,32 @@ public class Financiamento{
 
     static boolean repete( int opcao){
         char repete = 'S';
+        boolean continua = true; 
            
         if(opcao >= 1 && opcao <= 4){
     
-            System.out.print("Digite V para voltar ao menu ou S para sair: ");
-            repete = sc.nextLine().toUpperCase().charAt(0);
-            
-            if (repete == 'S'){
-                System.out.println("\tSaindo do menu...");
-                return false; // o usuário deseja sair
-            }else{
-                return true; // para qualuqer outro valor digitado ele volta para o menu
-            }
+            do{
+                System.out.print("Digite V para voltar ao menu ou S para sair: ");
+                repete = sc.nextLine().toUpperCase().charAt(0);
+
+                switch(repete){
+                    case 'S':
+                        System.out.println("\tSaindo do menu...");
+                        continua = false; // o usuário deseja sair
+                    break;
+                    case 'V':
+                        continua = true; // o usuario deseja volta ao menu
+                    break;
+                    default:
+                        System.out.println("\tOpção inválida!");
+                }
+
+            }while(repete!= 'S' && repete!= 'V');
 
         }else{
-            return true; // opcao inválida, logo o menu deve ser repetido
+            continua = true; // opcao inválida, logo o menu deve ser repetido
         }
-     
+
+     return continua;
     }
 }
