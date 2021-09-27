@@ -42,12 +42,12 @@ public class Financiamento{
         System.out.println("\t 4 - Crédito Consignado");
     }
 
-        static int getNumber(String mensagem){
-            System.out.print(mensagem);
-            int opcao  = Integer.parseInt(sc.nextLine());
-            
-            return opcao;
-        }
+    static int getNumber(String mensagem){
+        System.out.print(mensagem);
+        int opcao  = Integer.parseInt(sc.nextLine());
+        
+        return opcao;
+    }
 
     static void menu( int opcao){
         switch(opcao){
