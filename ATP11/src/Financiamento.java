@@ -21,34 +21,38 @@ _ O sistema deve encaminhar o usuário para o menu principal caso a resposta sej
 public class Financiamento{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
-        System.out.println("--------------- Bradesco Financiamentos ----------------");
-        System.out.println("Opções disponíveis: ");
-        System.out.println("\t 1 - Crédito Pessoal");
-        System.out.println("\t 2 - Crédito Imobiliário");
-        System.out.println("\t 3 - Crédito Empresarial");
-        System.out.println("\t 4 - Crédito Consignado");
-        
-        System.out.print("Digite a opção desejada: ");
-        int opcao  = Integer.parseInt(sc.nextLine());
+        int opcao; 
 
-        switch(opcao){
-            case 1:
-                System.out.println("\tCrédito Pessoal");
-            break; 
-            case 2:
-                System.out.println("\tCrédito Imobiliário");
-            break; 
-            case 3:
-                System.out.println("\tCrédito Empresarial");
-            break; 
-            case 4:
-                System.out.println("\tCrédito Consignado");
-            break; 
-            default:
-            System.out.println("A opção escolhida é inválida!");
-            break;
-        }
+        System.out.println("--------------- Bradesco Financiamentos ----------------");
+
+        do{
+            System.out.println("Opções disponíveis: ");
+            System.out.println("\t 1 - Crédito Pessoal");
+            System.out.println("\t 2 - Crédito Imobiliário");
+            System.out.println("\t 3 - Crédito Empresarial");
+            System.out.println("\t 4 - Crédito Consignado");
+            
+            System.out.print("Digite a opção desejada: ");
+            opcao  = Integer.parseInt(sc.nextLine());
+
+            switch(opcao){
+                case 1:
+                    System.out.println("\tCrédito Pessoal");
+                break; 
+                case 2:
+                    System.out.println("\tCrédito Imobiliário");
+                break; 
+                case 3:
+                    System.out.println("\tCrédito Empresarial");
+                break; 
+                case 4:
+                    System.out.println("\tCrédito Consignado");
+                break; 
+                default:
+                System.out.println("A opção escolhida é inválida!\n");
+                break;
+            }
+        }while(opcao < 1 || opcao > 4);
             
       
        
