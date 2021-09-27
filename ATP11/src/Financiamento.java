@@ -32,6 +32,25 @@ public class Financiamento{
         System.out.print("Digite a opção desejada: ");
         int opcao  = Integer.parseInt(sc.nextLine());
 
+        switch(opcao){
+            case 1:
+                System.out.println("\tCrédito Pessoal");
+            break; 
+            case 2:
+                System.out.println("\tCrédito Imobiliário");
+            break; 
+            case 3:
+                System.out.println("\tCrédito Empresarial");
+            break; 
+            case 4:
+                System.out.println("\tCrédito Consignado");
+            break; 
+            default:
+            System.out.println("A opção escolhida é inválida!");
+            break;
+        }
+            
+      
        
     }
 }
