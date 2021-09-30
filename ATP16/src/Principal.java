@@ -9,8 +9,9 @@ public class Principal {
     public static void main(String[] args) {
         CalculadoraTaxas taxas = new CalculadoraTaxas();
         
+        imprimeMenu();
         lerNumeroInt("Digite a opção desejada: ");
-        
+
         System.out.println("O saldo atual é: " + taxas.saldo());
         taxas.depositar(1000);
         System.out.println("O saldo atual é: " + taxas.saldo());
@@ -20,7 +21,14 @@ public class Principal {
         System.out.println("O saldo atual é: " + taxas.saldo());       
 
     }
-
+    static void imprimeMenu(){
+        System.out.println("Opções do Menu: ");
+        System.out.println("\t 1 - Saldo");
+        System.out.println("\t 2 - Sacar");
+        System.out.println("\t 3 - Depositar");
+        System.out.println("\t 4 - Tranferir");
+        System.out.println("\t 5 - Sair");
+    }
     static int lerNumeroInt(String mensagem){
         Scanner scan = new Scanner(System.in);
         System.out.print(mensagem);
