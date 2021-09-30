@@ -20,7 +20,7 @@ public class Principal {
                 System.out.println("Opção inválida!");
             }
             
-        } while ( !(validaOpcao(opcao) && opcao == 5));
+        } while( !(validaOpcao(opcao) && opcao == 5));
     }
 
     static void imprimeMenu() {
@@ -28,7 +28,7 @@ public class Principal {
         System.out.println("\t 1 - Saldo");
         System.out.println("\t 2 - Sacar");
         System.out.println("\t 3 - Depositar");
-        System.out.println("\t 4 - Tranferir");
+        System.out.println("\t 4 - Transferir");
         System.out.println("\t 5 - Sair");
     }
 

@@ -18,6 +18,7 @@ public class CalculadoraTaxas{
         qtdSaques++;
         taxaSaque();
     }
+
     public void taxaSaque(){
         if(validaTaxaSaque()){
             saldo -= 1.30;
@@ -39,13 +40,13 @@ public class CalculadoraTaxas{
 
     public void transferir(double valor){
         saldo -= valor;
-        taxaTranferecia(valor);
+        taxaTransferecia(valor);
     }
 
-    public void taxaTranferecia(double valor){
+    public void taxaTransferecia(double valor){
         double taxa = valor*0.00001;
         saldo -= taxa;
-        System.out.println("Uma taxa de transferência de R$ " + taxa + " está sendo aplicada.");
+        System.out.printf("Uma taxa de transferência de R$ %.4f está sendo aplicada.", taxa);
     }
 
 }
