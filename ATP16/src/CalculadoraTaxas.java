@@ -7,6 +7,7 @@ o segundo uma taxa de saque de R$1.30 a cada 5 saques realizados.
 
 public class CalculadoraTaxas{
     private double saldo;
+    private int qtdSaques;
 
     public void depositar(double valor){
         saldo += valor; 
@@ -14,6 +15,21 @@ public class CalculadoraTaxas{
 
     public void sacar(double valor){
         saldo -= valor;
+        qtdSaques++;
+        taxaSaque();
+    }
+    public void taxaSaque(){
+        if(validaTaxaSaque()){
+            saldo -= 1.30;
+        }
+    }
+
+    public boolean validaTaxaSaque(){
+        if(qtdSaques%5 == 0){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     public double saldo(){
@@ -24,6 +40,7 @@ public class CalculadoraTaxas{
         saldo -= valor;
         taxaTranferecia(valor);
     }
+
     public void taxaTranferecia(double valor){
         saldo -= valor*0.00001;
     }
