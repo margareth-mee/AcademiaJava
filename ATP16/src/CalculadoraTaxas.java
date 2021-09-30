@@ -21,6 +21,7 @@ public class CalculadoraTaxas{
     public void taxaSaque(){
         if(validaTaxaSaque()){
             saldo -= 1.30;
+            System.out.println("Você realizou 5 saques, uma taxa de R$ 1,30 está sendo aplicada.");
         }
     }
 
@@ -42,7 +43,9 @@ public class CalculadoraTaxas{
     }
 
     public void taxaTranferecia(double valor){
-        saldo -= valor*0.00001;
+        double taxa = valor*0.00001;
+        saldo -= taxa;
+        System.out.println("Uma taxa de transferência de R$ " + taxa + " está sendo aplicada.");
     }
 
 }
