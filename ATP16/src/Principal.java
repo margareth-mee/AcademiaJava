@@ -9,6 +9,8 @@ public class Principal {
     public static void main(String[] args){
         CalculadoraTaxas taxas = new CalculadoraTaxas();
         int opcao;
+        
+        cabecalho();
 
         do {
             imprimeMenu();
@@ -17,14 +19,17 @@ public class Principal {
             if(validaOpcao(opcao)){
                 menu(taxas, opcao);
             }else{
-                System.out.println("Opção inválida!");
+                System.out.println("\nOpção inválida!");
             }
             
         } while( !(validaOpcao(opcao) && opcao == 5));
     }
+    static void cabecalho(){
+        System.out.println("========== Banco Bradesco ===========");
+    }
 
     static void imprimeMenu() {
-        System.out.println("Opções do Menu: ");
+        System.out.println("\nOpções do Menu: ");
         System.out.println("\t 1 - Saldo");
         System.out.println("\t 2 - Sacar");
         System.out.println("\t 3 - Depositar");
@@ -51,26 +56,26 @@ public class Principal {
 
         switch (opcao) {
             case 1:
-                System.out.println("Você escolheu a opção vizualizar Saldo.");
+                System.out.println("\n============ Saldo ============");
                 System.out.println("O valor do saldo é: R$ " + taxas.saldo());    
                 break;
             case 2:
-                System.out.println("Você escolheu a opção sacar.");
+                System.out.println("\n============ Sacar =============");
                 valor = lerNumeroDouble("Digite o valor em R$ para realizar a operação: ");
                 taxas.sacar(valor);
                 break;
             case 3:
-                System.out.println("Você escolheu a opção depositar.");
+                System.out.println("\n========== Depositar ===========");
                 valor = lerNumeroDouble("Digite o valor em R$ para realizar a operação: ");
                 taxas.depositar(valor);
                 break;
             case 4:
-                System.out.println("Você escolheu a opção transferir.");
+                System.out.println("\n========== Transferir ===========");
                 valor = lerNumeroDouble("Digite o valor em R$ para realizar a operação: ");
                 taxas.transferir(valor);
                 break;
             case 5:
-                System.out.println("Você está saindo do menu. Obrigado!");
+                System.out.println("\nVocê está saindo do menu. Obrigada!");
                 break;
 
         }
