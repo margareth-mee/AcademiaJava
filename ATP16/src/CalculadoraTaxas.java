@@ -46,7 +46,7 @@ public class CalculadoraTaxas{
     public void taxaTransferecia(double valor){
         double taxa = valor*0.00001;
         saldo -= taxa;
-        System.out.printf("Uma taxa de transferência de R$ %.4f está sendo aplicada.", taxa);
+        System.out.printf("Uma taxa de transferência de R$ %.4f está sendo aplicada.\n", taxa);
     }
 
 }
