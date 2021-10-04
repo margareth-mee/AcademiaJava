@@ -1,14 +1,14 @@
 public class ContaCorrente {
-   private String agencia;
+   private int agencia;
    private int numero;
    private int codigoCliente; 
    private double saldo; 
 
-   public void setAgencia(String agencia) {
+   public void setAgencia(int agencia) {
        this.agencia = agencia;
    }
 
-   public String getAgencia() {
+   public int getAgencia() {
        return this.agencia;
    }
 
