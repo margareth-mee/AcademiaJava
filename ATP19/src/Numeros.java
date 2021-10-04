@@ -9,9 +9,9 @@ public class Numeros {
             System.out.printf("Digite o valor do %dº número inteiro: ", i+1);
             arrayInteiros[i] = Integer.parseInt(sc.nextLine());
         }
+
         for (int j : arrayInteiros) {
-            System.out.printf("valor: %d\n", j);
-            
+            System.out.printf("Valor: %d\n", j);         
         }
 
     }
