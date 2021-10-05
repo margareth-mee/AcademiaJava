@@ -1,4 +1,4 @@
-public class Coordenador {
+public class Coordenador extends Pessoa{
     private String curso_coordenado;
     private double bonus;
 
