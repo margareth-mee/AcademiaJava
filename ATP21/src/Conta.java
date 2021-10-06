@@ -14,5 +14,9 @@ public class Conta{
     public String getCodigo_cliente() {
         return codigo_cliente;
     }
+
+    public void transferencia(double valor){
+        this.saldo -= valor; 
+    }
     
 }
