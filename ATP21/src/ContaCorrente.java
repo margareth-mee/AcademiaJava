@@ -1,7 +1,7 @@
 /*_ Crie uma classe Conta Corrente com os atributos privados: taxa transferência, taxa manutenção e número de transferências.*/
 public class ContaCorrente {
-    private double taxa_transferencia;
-    private double taxa_manuntencao;
-    private int numero_transferencias;
-    
+    private double taxa_transferencia = 10.50;
+    private double taxa_manuntencao = 2.5;
+    private int numero_transferencias = 0;
+
 }
