@@ -3,7 +3,7 @@ public class Teste {
         Conta conta = new Conta();
         ContaCorrente conta_corrente = new ContaCorrente();
 
-        System.err.println("------ Cadastrando Cliente do tipo Conta ----------");
+        System.out.println("------ Cadastrando Cliente do tipo Conta ----------");
         conta.setCodigo_cliente("114110571");
         conta.setSaldo(2500.00);
 
@@ -37,6 +37,8 @@ public class Teste {
             //imprimindo informações da conta após transferência
             System.out.println("Código Cliente: " + conta_corrente.getCodigo_cliente());
             System.out.println("Saldo: " + conta_corrente.getSaldo());
-        }                
+        }  
+        
+        
     }
 }
