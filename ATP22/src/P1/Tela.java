@@ -13,6 +13,9 @@ public class Tela {
         aluno2.setIdade(30);
         aluno2.setMatricula("114110577");
 
+        System.out.println(aluno1);
+        System.out.println(aluno2);
+
     }
     
 }

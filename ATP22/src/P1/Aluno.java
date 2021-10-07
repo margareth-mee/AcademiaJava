@@ -1,3 +1,5 @@
+package P1;
+
 public class Aluno{
     private String nome_completo;
     private int idade;
@@ -20,5 +22,11 @@ public class Aluno{
     }
     public String getMatricula() {
         return this.matricula;
+    }
+
+    @Override
+    public String toString() {
+        String mensagem = "Nome completo: " + this.nome_completo + "\n" + "Idade: " + this.idade + "\n" + "Matrícula: " + this.matricula + "\n";
+        return mensagem;
     }
 }
