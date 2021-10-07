@@ -17,7 +17,7 @@ public class ContaCorrente {
     }
     @Override
     public String toString() {
-        String mensagem = "Codigo Cliente: " + this.codigo_cliente + "\n" + "Saldo: " + this.saldo + "\n";
+        String mensagem = "Codigo Cliente: " + this.codigo_cliente + "\n" + "Saldo: " + this.saldo + "\n" + "Taxa de Saque: " + this.taxa_saque + "\n";
         return mensagem;
     }
 }
