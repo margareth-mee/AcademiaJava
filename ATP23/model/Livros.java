@@ -1,16 +1,9 @@
 package model;
 
-public class CadastroLivros{
-    private int id;
+public class Livros extends Base{
     private String titulo;
     private String autor;
-
-    public void setId(int id) {
-        this.id = id;
-    }
-    public int getId() {
-        return id;
-    }
+   
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
