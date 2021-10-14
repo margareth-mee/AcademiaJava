@@ -1,6 +1,5 @@
 package view;
 
-import java.lang.ModuleLayer.Controller;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -12,23 +11,19 @@ public class Main {
 
     public static void main(String[] args) {
         LivrosController controller = new LivrosController();
-        int opcao = lerInteiro(
-                "Digite uma das opcoes abaixo: \n\t1 - create \n\t2 - read \n\t3 - update \n\t4 - delete");
+        int opcao; 
 
         do {
-            switch (opcao) {
+            opcao = lerInteiro(
+                "\nOpcões do menu:\n\t0 - sair \n\t1 - cadastrar \n\t2 - listar \nDigite uma opcao: ");
+
+            switch (opcao){
                 case 1:
-                    create(controller);
+                    cadastrar(controller);
                     break;
                 case 2:
-                    read(controller);
+                    listar(controller);
                     break;
-                /*case 3:
-                    update(controller);
-                    break;
-                case 4:
-                    delete(controller);
-                    break;*/
                 default:
                     break;
             }
@@ -36,34 +31,32 @@ public class Main {
     }
 
     public static int lerInteiro(String mensagem) {
-        System.out.println(mensagem);
+        System.out.print(mensagem);
         int numero = Integer.parseInt(scan.nextLine());
         return numero;
     }
+
     public static String lerString(String mensagem){
-        System.out.println(mensagem);
+        System.out.print(mensagem);
         return scan.nextLine();
     }
-    public static void create(LivrosController controller){
+
+    public static void cadastrar(LivrosController controller){
         Livros livro = new Livros();
         
-        livro.setAutor(lerString("Digite o autor do livro: "));
+        livro.setAutor(lerString("\nDigite o autor do livro: "));
         livro.setTitulo(lerString("Digite o título do livro: "));
+        
         controller.create(livro);
     }
-    public static void read(LivrosController controller){
+
+    public static void listar(LivrosController controller){
         ArrayList <Livros> lista = controller.read();
 
+        System.out.println("\n----------- Lista de Livros -----------");
         for (Livros livro : lista) {
-            System.out.printf("\nTítulo: %s, Autor: %s\n", livro.getTitulo(), livro.getAutor());
+            System.out.printf("Título: %s, Autor: %s\n", livro.getTitulo(), livro.getAutor());
         }
     }
-    /*public static void update(LivrosController controller, Livros livro){
-        controller.update(livro);
-
-    }
-    public static void delete(LivrosController controller, Livros livro){
-        controller.delete(livro);
-    }*/
-
+ 
 }
