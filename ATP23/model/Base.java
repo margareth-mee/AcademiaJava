@@ -9,4 +9,8 @@ public class Base {
         Random gerador = new Random();
         this.id = gerador.nextInt(1000);
     }
+
+    public int getId() {
+        return id;
+    }
 }
