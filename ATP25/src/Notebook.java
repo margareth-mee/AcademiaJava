@@ -1,5 +1,5 @@
-public class Notebook {
+public class Notebook extends Computador{
     public int bateria;
-    public doubel velociadade_wifi;
+    public double velociadade_wifi;
     public String bluetooth;
 }
