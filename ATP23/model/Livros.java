@@ -16,4 +16,16 @@ public class Livros extends Base{
     public String getAutor() {
         return autor;
     } 
+
+    @Override
+    public boolean equals(Object obj) {
+        Livros livro = (Livros) obj;
+
+        if(this.getId() == livro.getId()){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
