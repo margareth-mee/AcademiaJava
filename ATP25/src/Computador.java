@@ -1,8 +1,8 @@
 public class Computador{
     public String marca;
-    public int memoria_ram;
+    public String memoria_ram;
     public String processador;
-    public int disco_ridigo;
+    public String disco_ridigo;
 
     @Override
     public String toString() {
