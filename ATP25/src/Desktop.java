@@ -5,6 +5,6 @@ public class Desktop extends Computador{
     
     @Override
     public String toString() {
-        return "Tamanho Gabinete: " + tamanho_gabinete + "Monitor externo: " + monitor_externo + "Fonte: " + fonte;
+        return super.toString() + "\nTamanho Gabinete: " + tamanho_gabinete + "\nMonitor externo: " + monitor_externo + "\nFonte: " + fonte;
     }
 }
