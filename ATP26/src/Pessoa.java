@@ -12,7 +12,7 @@ public class Pessoa{
     public boolean equals(Object obj) {
         Pessoa pessoa = (Pessoa) obj;
         
-        if(this.nome.equals(pessoa.nome)) {
+        if(this.nome.equals(pessoa.nome) && this.sobrenome.equals(pessoa.sobrenome) && (this.idade == pessoa.idade)) {
             return true;
         }
         

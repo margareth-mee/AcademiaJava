@@ -11,7 +11,7 @@ public class Aluno extends Pessoa{
     public boolean equals(Object obj) {
         Aluno aluno = (Aluno) obj;
         
-        if(this.matricula.equals(aluno.matricula)) {
+        if(this.matricula.equals(aluno.matricula) && this.turma.equals(aluno.turma) && this.curso.equals(aluno.curso)){
             return true;
         }
         

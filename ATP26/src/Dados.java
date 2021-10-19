@@ -43,7 +43,7 @@ public class Dados {
     }
 
     public void reorganiza(int posicao){
-        for (int i = 0; i < dados.length; i++) {
+        for (int i = posicao; i < dados.length - 1; i++) {
             this.dados[i] = this.dados[i+1];
         }
     }
