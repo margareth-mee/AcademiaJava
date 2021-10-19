@@ -43,4 +43,13 @@ public class Dados {
             this.dados[i] = this.dados[i+1];
         }
     }
+
+    public boolean contains(Object obj){
+        for (int i = 0; i < posicaoAtual; i++) {
+            if(dados[i].equals(obj)){
+                return true;
+            }
+        }
+        return false;
+    }
 }
