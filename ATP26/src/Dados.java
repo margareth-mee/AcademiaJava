@@ -9,7 +9,7 @@ public class Dados {
         this.dados = new Object[tamanhoAtual];
     }
 
-    public String add(Object obj){
+    public String add(Object obj){ 
 
         if(posicaoAtual < dados.length){
             dados[posicaoAtual] = obj;
@@ -25,10 +25,10 @@ public class Dados {
             dados = dadosTemp;
         }
         return "Salvo com sucesso!";
-    }
+    } 
     
     public int size(){
-        return posicaoAtual + 1;
+        return posicaoAtual;
     }
 
     public String remove(Object obj){
