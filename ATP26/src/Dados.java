@@ -27,13 +27,20 @@ public class Dados {
         return "Salvo com sucesso!";
     }
 
-    public boolean remove(Object obj){
+    public String remove(Object obj){
         for (int i = 0; i < dados.length; i++) {
             if(dados[i].equals(obj)){
-                return true;
+                reorganiza(i);
+                posicaoAtual--;
+                return "Removido com sucesso!";
             }
         }
-        return false;
+        return "O objeto não foi encontrado!";
     }
 
+    public void reorganiza(int posicao){
+        for (int i = 0; i < dados.length; i++) {
+            this.dados[i] = this.dados[i+1];
+        }
+    }
 }
