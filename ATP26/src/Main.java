@@ -18,6 +18,12 @@ public class Main {
 
         System.out.println(lista.add(pessoa));
         System.out.println(lista.add(aluno));
+        System.out.println(lista.add(pessoa));
+        System.out.println(lista.add(aluno));
+        System.out.println(lista.add(pessoa));
+        System.out.println("O tamanho da lista é: " + lista.size());
+        System.out.println(lista.add(aluno));
+        System.out.println("O tamanho da lista é: " + lista.size());
 
         clone.nome = "Maykon";
         clone.sobrenome = "Granemann";

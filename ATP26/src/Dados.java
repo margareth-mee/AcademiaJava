@@ -15,14 +15,16 @@ public class Dados {
             dados[posicaoAtual] = obj;
             posicaoAtual++;
         }else{
-            tamanhoAtual = tamanhoAtual*2;
+            tamanhoAtual = tamanhoAtual + 5;
             Object[] dadosTemp = new Object[tamanhoAtual];
 
             for (int i = 0; i < dados.length; i++) {
                 dadosTemp[i] = dados[i];                
             }
-
             dados = dadosTemp;
+
+            dados[posicaoAtual] = obj;
+            posicaoAtual++;  
         }
         return "Salvo com sucesso!";
     } 
