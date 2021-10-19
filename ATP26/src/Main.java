@@ -29,6 +29,7 @@ public class Main {
             System.out.println("O objeto não está contido na lista.");
         }
 
+        System.out.println("O tamanho da lista é: " + lista.size());
         System.out.println(lista.remove(aluno));
     }
 }
