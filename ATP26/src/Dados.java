@@ -26,6 +26,10 @@ public class Dados {
         }
         return "Salvo com sucesso!";
     }
+    
+    public int size(){
+        return posicaoAtual + 1;
+    }
 
     public String remove(Object obj){
         for (int i = 0; i < dados.length; i++) {
