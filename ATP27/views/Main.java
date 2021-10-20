@@ -57,16 +57,14 @@ public class Main {
 
         if (obj instanceof FilmeController) {
             FilmeController controller = (FilmeController) obj;
-            ArrayList<Filme> lista = controller.read();
-
-            for (Filme filme : lista) {
+            
+            for (Filme filme : controller.read()) {
                 System.out.println(filme);
             }
         } else if (obj instanceof SerieController) {
             SerieController controller = (SerieController) obj;
-            ArrayList<Serie> lista = controller.read();
-
-            for (Serie serie : lista) {
+            
+            for (Serie serie : controller.read()) {
                 System.out.println(serie);
             }
         }
