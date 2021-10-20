@@ -1,4 +1,4 @@
-public class Pessoa{
+public class Pessoa {
     public String nome;
     public String sobrenome;
     public int idade;
@@ -10,12 +10,17 @@ public class Pessoa{
 
     @Override
     public boolean equals(Object obj) {
-        Pessoa pessoa = (Pessoa) obj;
-        
-        if(this.nome.equals(pessoa.nome) && this.sobrenome.equals(pessoa.sobrenome) && (this.idade == pessoa.idade)) {
-            return true;
+
+        if (obj instanceof Pessoa) {
+            Pessoa pessoa = (Pessoa) obj;
+
+            if (this.nome.equals(pessoa.nome) &&
+                this.sobrenome.equals(pessoa.sobrenome) &&
+                this.idade == pessoa.idade)
+            {
+                return true;
+            }
         }
-        
-       return false;
+        return false;
     }
 }

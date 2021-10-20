@@ -3,39 +3,36 @@ public class Dados {
     int tamanhoAtual;
     int posicaoAtual;
 
-    public Dados(){
+    public Dados() {
         tamanhoAtual = 5;
         posicaoAtual = 0;
         this.dados = new Object[tamanhoAtual];
     }
 
-    public String add(Object obj){ 
+    public String add(Object obj) {
 
-        if(posicaoAtual < dados.length){
-            dados[posicaoAtual] = obj;
-            posicaoAtual++;
-        }else{
-            tamanhoAtual = tamanhoAtual + 5;
+        if (posicaoAtual >= dados.length) {
+            tamanhoAtual += 5;
             Object[] dadosTemp = new Object[tamanhoAtual];
 
             for (int i = 0; i < dados.length; i++) {
-                dadosTemp[i] = dados[i];                
+                dadosTemp[i] = dados[i];
             }
             dados = dadosTemp;
-
-            dados[posicaoAtual] = obj;
-            posicaoAtual++;  
         }
+        
+        dados[posicaoAtual] = obj;
+        posicaoAtual++;
         return "Salvo com sucesso!";
-    } 
-    
-    public int size(){
+    }
+
+    public int size() {
         return posicaoAtual;
     }
 
-    public String remove(Object obj){
-        for (int i = 0; i < dados.length; i++) {
-            if(dados[i].equals(obj)){
+    public String remove(Object obj) {
+        for (int i = 0; i < posicaoAtual; i++) {
+            if (dados[i].equals(obj)) {
                 reorganiza(i);
                 posicaoAtual--;
                 return "Removido com sucesso!";
@@ -44,15 +41,15 @@ public class Dados {
         return "O objeto não foi encontrado!";
     }
 
-    public void reorganiza(int posicao){
-        for (int i = posicao; i < dados.length - 1; i++) {
-            this.dados[i] = this.dados[i+1];
+    public void reorganiza(int posicao) {
+        for (int i = posicao; i < posicaoAtual; i++) {
+            this.dados[i] = this.dados[i + 1];
         }
     }
 
-    public boolean contains(Object obj){
+    public boolean contains(Object obj) {
         for (int i = 0; i < posicaoAtual; i++) {
-            if(dados[i].equals(obj)){
+            if (dados[i].equals(obj)) {
                 return true;
             }
         }
