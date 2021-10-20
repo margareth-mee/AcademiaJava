@@ -10,7 +10,13 @@ public class Dados {
     }
 
     public String add(Object obj) {
+        verificaTamanho();
+        dados[posicaoAtual] = obj;
+        posicaoAtual++;
+        return "Salvo com sucesso!";
+    }
 
+    public void verificaTamanho() {
         if (posicaoAtual >= dados.length) {
             tamanhoAtual += 5;
             Object[] dadosTemp = new Object[tamanhoAtual];
@@ -20,10 +26,6 @@ public class Dados {
             }
             dados = dadosTemp;
         }
-        
-        dados[posicaoAtual] = obj;
-        posicaoAtual++;
-        return "Salvo com sucesso!";
     }
 
     public int size() {
