@@ -1,7 +1,12 @@
 package models;
 
-public class Filme {
-    public int id;
+public class Filme extends Base{
     public String titulo;
-    public String categoria; 
+    public String categoria;
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nTítulo: " + this.titulo + "\nCategoria: " + this.categoria;
+    }
+
 }
