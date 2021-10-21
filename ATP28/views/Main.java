@@ -14,6 +14,7 @@ public class Main {
         p1.id = "001";
         p1.nomeCompleto = "Margareth Mee";
         p1.CPF = "0101010101";
+        p1.endereco.id = "001";
         p1.endereco.rua = "Rua Diogo da Costa";
         p1.endereco.numero = "387";
         p1.endereco.cidade = "Campina Grande";
@@ -23,6 +24,7 @@ public class Main {
         j1.id = "001";
         j1.nomeCompleto = "Margareth Mee";
         j1.CNPJ = "02020202020";
+        j1.endereco.id = "001";
         j1.endereco.rua = "Rua Vinte e Sete de Julho";
         j1.endereco.numero = "100";
         j1.endereco.cidade = "João Pessoa";
@@ -35,6 +37,7 @@ public class Main {
         p2.id = "001";
         p2.nomeCompleto = "Maykon Dyego";
         p2.CPF = "030303030";
+        p2.endereco.id = "001";
         p2.endereco.rua = "Rua Ines Brasil";
         p2.endereco.numero = "37";
         p2.endereco.cidade = "Blumenal";
@@ -44,6 +47,7 @@ public class Main {
         j2.id = "001";
         j2.nomeCompleto = "CIA Ines Brasil";
         j2.CNPJ = "7171717177171";
+        j2.endereco.id = "001";
         j2.endereco.rua = "Rua do Brasil";
         j2.endereco.numero = "71";
         j2.endereco.cidade = "Rio de Janeiro";

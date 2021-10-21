@@ -10,6 +10,6 @@ public class Pessoa extends Base{
 
     @Override
     public String toString() {
-        return "ID: " + this.id + "\nNome completo: " + this.nomeCompleto + "\nEndereço: " + this.endereco.rua + ", nº " + this.endereco.numero + "\nCidade: " + this.endereco.cidade + "\nCEP: " + this.endereco.CEP; 
+        return "ID: " + this.id + "\nNome completo: " + this.nomeCompleto + this.endereco.toString(); 
     }
 }
