@@ -57,6 +57,7 @@ public class Main {
         pjcontroller.update(j2);
 
         listar(pfcontroller);
+        System.out.println("------------------------------------");
         listar(pjcontroller);
 
         pfcontroller.delete(p2);

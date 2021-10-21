@@ -8,6 +8,6 @@ public class Endereco extends Base{
     
     @Override
     public String toString() {
-        return "\nEndereço ID: " +  this.id + "\nLougrado: " + this.rua + ", nº " + this.numero + "\nCidade: " + this.cidade + "\nCEP: " + this.CEP;
+        return "\nEndereço ID: " +  this.id + "\nLogradouro: " + this.rua + ", nº " + this.numero + "\nCidade: " + this.cidade + "\nCEP: " + this.CEP;
     }
 }
