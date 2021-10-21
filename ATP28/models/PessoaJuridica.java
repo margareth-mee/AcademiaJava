@@ -1,5 +1,5 @@
 package models;
 
-public class PessoaJuridica {
+public class PessoaJuridica extends Pessoa{
     public String CNPJ;
 }
