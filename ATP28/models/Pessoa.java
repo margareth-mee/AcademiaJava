@@ -1,26 +1,11 @@
 package models;
 
-public class Pessoa{
+public class Pessoa extends Base{
     public String nomeCompleto;
-    public String id;
     public Endereco endereco; 
 
     public Pessoa(){
         endereco = new Endereco();
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-
-        if(obj instanceof Pessoa){
-            Pessoa p = (Pessoa)obj;
-
-            if(this.id.equals(p.id)){
-                return true;
-               }
-        }
-       
-        return false;
     }
 
     @Override
