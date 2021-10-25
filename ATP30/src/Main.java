@@ -70,8 +70,6 @@ public class Main {
     }
 
     public static void menu(int opcao, Calculadora hp) {
-        int resultado;
-
         switch (opcao) {
         case 1:
             System.out.println("Soma: "+ hp.soma());
