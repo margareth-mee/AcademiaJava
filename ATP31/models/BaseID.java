@@ -1,5 +1,5 @@
 package models;
 
 public class BaseID {
-    private String id;
+    public String id;
 }
