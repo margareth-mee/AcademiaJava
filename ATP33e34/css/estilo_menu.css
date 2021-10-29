@@ -1,0 +1,26 @@
+body{
+    background:#F8DD7F}
+
+#menu{
+    background:#F6C208;
+    width: 40%; 
+    margin: 0px auto 20px;
+    padding: 20px 50px;
+    border-radius: 10px;
+} 
+
+h1{
+    color:#24243C;
+    text-transform: uppercase;
+    font-size: 26px;
+    text-align: center;
+    width: 50%; 
+    margin: 40px auto 10px ;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+
+h2{
+    color: #24243C;
+    font-size: 18px;
+}

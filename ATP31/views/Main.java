@@ -10,10 +10,13 @@ public class Main {
 
     public static void main(String[] args) {
         ProdutoController controller = new ProdutoController();
+        int opcao;
 
-        imprimeOpcoes();
-        int opcao = getNumero();
-        menu(opcao, controller);
+        do {
+            imprimeOpcoes();
+            opcao = getNumero();
+            menu(opcao, controller);
+        } while (opcao != 5);
 
     }
 
@@ -26,6 +29,7 @@ public class Main {
         boolean valido;
 
         do {
+            System.out.print("Digite a opção desejada: ");
             try {
                 numero = Integer.parseInt(scan.nextLine());
                 valido = true;
@@ -42,7 +46,7 @@ public class Main {
         switch (opcao) {
         case 1:
             System.out.println("------- Cadastrar -------");
-            controller.create(cadastrar()); 
+            controller.create(cadastrar());
             break;
         case 2:
             System.out.println("------- Atualizar -------");
@@ -60,12 +64,12 @@ public class Main {
             System.out.println("Obrigada por usar o Menu! Até mais.");
             break;
         default:
-            System.out.println("A opcão é inválida");
+            System.out.println("A opcão é inválida!");
             break;
         }
     }
 
-    public static Produto cadastrar(){
+    public static Produto cadastrar() {
         Produto p = new Produto();
 
         System.out.print("Digite o id do produto: ");
@@ -81,11 +85,11 @@ public class Main {
         p.categoria.descricao = scan.nextLine();
 
         System.out.println("O produto foi cadastrado com sucesso!");
-        
+
         return p;
     }
 
-    public static Produto atualizar(){
+    public static Produto atualizar() {
         Produto p = new Produto();
 
         System.out.print("Digite o id do produto que você deseja atualizar: ");
@@ -94,13 +98,13 @@ public class Main {
         return p;
     }
 
-    public static void listar(ProdutoController controller){
+    public static void listar(ProdutoController controller) {
         for (Produto p : controller.read()) {
             System.out.println(p);
         }
     }
 
-    public static Produto deletar(){
+    public static Produto deletar() {
         Produto p = new Produto();
 
         System.out.print("Digite o id do produto que você deseja deletar: ");

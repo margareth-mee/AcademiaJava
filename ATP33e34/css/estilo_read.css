@@ -1,0 +1,62 @@
+body{
+    background: #a1a1a1;
+}
+
+div{
+    background: #fff; 
+    width: 30%; 
+    margin: 10px auto 20px;
+    padding: 20px 50px;
+    border-radius: 10px;
+
+}
+
+h1{
+    color: blue;
+    text-transform: uppercase;
+    font-size: 26px;
+    text-align: center;
+}
+
+
+table{
+    width: 100%;
+    margin: 0px auto 10px;
+    border: 1px #000 solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table thead{
+    background: rgb(126, 125, 180);
+    font-size: 16px;
+    text-transform: uppercase;
+    height: 25px;
+}
+
+table thead th{
+    border: 1px solid #000;
+}
+
+table tbody tr{
+    height: 25px;
+    font-size: 14px;
+}
+
+table tbody tr td{
+    padding: 8px 10px;
+    border: 1px solid #000;
+}
+
+a{
+    color: rgb(126, 125, 180);
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover{
+    background: rgb(126, 125, 180);
+    color: #fff;
+    /*padding: 5px 30px;*/
+}

@@ -1,0 +1,103 @@
+body{
+    background:#F8DD7F;
+}
+
+div{
+    background:#F6C208; 
+    width: 40%; 
+    margin: 10px auto 20px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1{
+    color:#24243C;
+    text-transform: uppercase;
+    font-size: 26px;
+    text-align: center;
+    width: 50%; 
+    margin: 40px auto 10px ;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+h2{
+    color: #24243C;
+    font-size: 18px;
+}
+form{
+    margin: 10px auto;
+    border: 1px solid #F8DD7F;  
+    padding: 10px 5%;
+    width: 60%;
+    text-align: left;
+}
+
+input{
+    font-size: 14px;
+    line-height: 16px;
+    width: 60%;
+    background: #f3f0e6;
+    border: 0.5px solid #F6C208;
+    border-radius: 5px;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    background: #24243C;
+    color: #e9e4b8;
+    height: 30px;
+    width: 35%;
+    border: 1px solid #24243C;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover{
+    background: #e9e4b8;
+    color: #24243C;
+    border: 1px solid #24243C;
+}
+
+a{
+    color: #e9e4b8;
+    background: #24243C;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 5px 30px;
+    border-radius: 5px;
+}
+
+a:hover{
+    color: #24243C;
+    background: #F8DD7F;
+
+}
+
+table{
+    width: 40%;
+    margin: 0px auto 10px;
+    /* border: 1px #000 solid; */
+    border-collapse: collapse;
+    text-align: center;
+    color: #24243C;
+}
+
+table thead{
+    font-size: 16px;
+    text-transform: uppercase;
+    height: 25px;
+}
+
+table thead th{
+    border-bottom: 1px solid #24243C;  
+}
+
+table tbody tr{
+    height: 25px;
+    font-size: 14px;
+}
+
+table tbody tr td{
+    padding: 8px 10px;
+    border: 1px solid #000;
+}

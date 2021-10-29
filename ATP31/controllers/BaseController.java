@@ -25,8 +25,8 @@ public class BaseController<T> {
         }
     }
 
-    public void delete(T obj){
-        this.lista.remove(obj);
+    public boolean delete(T obj){
+        return this.lista.remove(obj);
     }
     
     public boolean existe(T obj){

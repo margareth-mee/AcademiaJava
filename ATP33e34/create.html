@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title> Cadastro de viagens - Cadastrar</title>
+    <link rel="stylesheet" href="css/estilo_create.css">
+    <script src="js/create.js"></script>
+</head>
+
+<body>
+    <h1> Cadastro de viagens: Cadastrar</h1>
+
+    <div id="infos">
+        <h2> Digite as informações abaixo para cadastrar a viagem: </h2>
+        <form>
+            <label>ID:</label> <input type="text" id="id" /> <br />
+            <label>Local de partida:</label> <input type="text" id="partida" /> <br />
+            <label>Local de destino:</label> <input type="text" id="destino" /> <br />
+            <label>Horário de partida:</label> <input type="time" id="horario" /> <br />
+            <label>Data de ida:</label> <input type="date" id="data" /> <br /><br />
+
+            <input type="submit" value="Salvar" onclick="salvar(event)">
+        </form>
+    </div>
+    <!-- <hr /> -->
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>FROM</th>
+                <th>TO</th>
+                <th>HORA</th>
+                <th>DATA</th>
+            </tr>
+        </thead>
+        <tbody id="corpo-tabela">
+
+        </tbody>
+    </table>
+    <br />
+    
+    <a href="menu.html">Voltar</a>
+</body>

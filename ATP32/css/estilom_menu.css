@@ -1,0 +1,19 @@
+body{
+    background:#EADC5E}
+
+div{
+    background:#B3A212;
+    width: 50%; 
+    margin: 40px auto 20px;
+    padding: 20px 50px;
+    border-radius: 10px;
+} 
+
+h1{
+    color: #185f39;
+    text-transform: uppercase;
+    font-size: 26px;
+    text-align: center;
+}
+
+
