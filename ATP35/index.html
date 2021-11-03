@@ -1,0 +1,36 @@
+<!-- _  Crie um sistema Web para manter seu perfil profissional
+_  Crie uma página principal com a estrutura do site contendo o menu e a area de conteudo.
+_  A página principal, deve possuir um menu com: resumo, experiencias, habilidades e contatos
+_  Crie uma página nova para cada item do menu.Cada página deve possuir seu próprio CSS e seu JavaScript, caso necessário.
+_  O menu deve fazer com que as paginas secundarias sejam carregadas na página principal através de javascript. 
+https://www.freecodecamp.org/news/15-web-developer-portfolios-to-inspire-you-137fb1743cae/-->
+<html>
+
+<head>
+    <title> Margareth Mee Gomes de Lima</title>
+    <link rel="stylesheet" href="css/index-style.css">
+    <script src="js/index.js"> </script>
+</head>
+
+<body>
+    <main>
+        <div id="cabecalho">
+            <div id="logo">
+                <a href="index.html">
+                    HOME
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li onclick="resumo()">Resumo </li>
+                    <li onclick="experiencias()">Experiências </li>
+                    <li onclick="habilidades()">Habilidades</li>
+                    <li onclick="contatos()">Contatos</li>
+                </ul>
+            </nav>
+        </div>
+
+        <iframe id="frame" frameborder="0"></iframe>
+    </main>
+</body>
+</html>

@@ -1,0 +1,72 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    background-image: url("../images/image2.jpg");
+    background-size: 70% 100%; 
+    width: 100%;
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    /* position: relative;
+    background-attachment: fixed; */    
+}
+
+#cabecalho{
+    /* padding: 5px 5%; */
+    width: 80%;
+    height: 80px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#logo{
+    width: 80px;
+    font-size: 18px;
+    margin: 0 300px ;
+}
+#logo a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul{
+     display: flex; 
+    list-style: none; 
+} 
+ 
+nav ul li{
+    color:#ffffff;
+    cursor: pointer;
+    margin: 0 5px; 
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 25px;
+    padding: 5px 10px;
+}
+
+nav ul li:hover{
+    border: 1px solid #fff;
+    color:#fff;
+}  
+
+#frame{
+    /* border: 1px solid rgb(70, 156, 48); */
+    width: 60%;
+    height: 65%; 
+    align-items: center;
+    display: flex;
+    margin: 5% 20%; 
+}
