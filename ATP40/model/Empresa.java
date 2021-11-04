@@ -11,14 +11,14 @@ public class Empresa {
     public String nome;
     public String cnpj;
     public String ramo;
-
+    
     public Empresa(String linha){
         String[] dados = linha.split(";");
         this.nome= dados[0];
         this.cnpj = dados[1];
         this.ramo = dados[2];
     }
-    
+
     @Override
     public String toString() {
         String retorno = String.format("%s;%s;%s", 

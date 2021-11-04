@@ -26,7 +26,7 @@ public class EmpresaController implements IController{
     public ArrayList<Empresa> ler() {
         ArrayList<Empresa> lista = new ArrayList<Empresa>();
         try {
-            Scanner sc = new Scanner(new File("dados/input.txt"));
+            Scanner sc = new Scanner(new File("dados/lista_empresas.csv"));
             while(sc.hasNextLine()){
                 String linha = sc.nextLine();
                 Empresa e = new Empresa(linha);
