@@ -1,8 +1,8 @@
-package controller;
+package P1.controller;
 
 import java.util.ArrayList;
 
-import model.Empresa;
+import P1.model.Empresa;
 
 public interface IController {
     public void salvar(Empresa obj);

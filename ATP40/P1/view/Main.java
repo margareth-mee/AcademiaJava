@@ -1,8 +1,8 @@
-package view;
+package P1.view;
 
-import controller.EmpresaController;
-import controller.IController;
-import model.Empresa;
+import P1.controller.EmpresaController;
+import P1.controller.IController;
+import P1.model.Empresa;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package controller;
+package P1.controller;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import model.Empresa;
+import P1.model.Empresa;
 
 public class EmpresaController implements IController{
   
@@ -15,7 +15,7 @@ public class EmpresaController implements IController{
       
         try {
             FileWriter fw;
-            fw = new FileWriter("dados/lista_empresas.csv", true);
+            fw = new FileWriter("P1/dados/lista_empresas.csv", true);
             fw.write(obj.toString() +"\n");
             fw.close();
         } catch (IOException e) {
@@ -26,7 +26,7 @@ public class EmpresaController implements IController{
     public ArrayList<Empresa> ler() {
         ArrayList<Empresa> lista = new ArrayList<Empresa>();
         try {
-            Scanner sc = new Scanner(new File("dados/lista_empresas.csv"));
+            Scanner sc = new Scanner(new File("P1/dados/lista_empresas.csv"));
             while(sc.hasNextLine()){
                 String linha = sc.nextLine();
                 Empresa e = new Empresa(linha);

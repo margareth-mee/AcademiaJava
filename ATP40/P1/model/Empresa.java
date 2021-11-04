@@ -1,4 +1,4 @@
-package model;
+package P1.model;
 /* 
 _  Crie um sistema para cadastro de Empresas. A empresa deve possuir três atributos públicos: nome, cnpj e ramo de atividade
 _  Utilize o padrão DAO para criar uma estrutura de armazenamento de dados em um arquivo do tipo CSV.
@@ -11,7 +11,7 @@ public class Empresa {
     public String nome;
     public String cnpj;
     public String ramo;
-    
+
     public Empresa(String linha){
         String[] dados = linha.split(";");
         this.nome= dados[0];
