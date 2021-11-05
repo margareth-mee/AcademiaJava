@@ -10,21 +10,21 @@ public class PontoTuristico extends BaseModel{
     public String descricao;
     public String localizacao;
 
+    public PontoTuristico(){
+        super();
+    }
     public PontoTuristico(String linha){
         String[] dados = linha.split(";");
-        this.nome= dados[0];
-        this.descricao = dados[1];
-        this.localizacao = dados[2];
+        this.id = dados[0];
+        this.nome= dados[1];
+        this.descricao = dados[2];
+        this.localizacao = dados[3];
     }
 
     @Override
     public String toString() {
-        String retorno = String.format("%s;%s;%s;%s", 
-        this.id, 
-        this.nome, 
-        this.descricao,
-        this.localizacao);
-        
+        String retorno = String.format("%s;%s;%s;%s", this.id, this.nome, this.descricao, this.localizacao);
+
     return retorno;
     }
 }

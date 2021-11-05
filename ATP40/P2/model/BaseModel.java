@@ -1,7 +1,7 @@
 package P2.model;
 
 public class BaseModel {
-    public int id;
+    public String id;
 
     @Override
     public boolean equals(Object obj) {
@@ -12,9 +12,5 @@ public class BaseModel {
             }
         }
         return false;
-    }
-    @Override
-    public String toString() {       
-        return Integer.toString(this.id);
     }
 }
