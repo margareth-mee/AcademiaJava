@@ -5,12 +5,12 @@ _  Crie uma interface que contenha os métodos de leitura e gravação de dados 
 _  Crie duas implementações da interface. Uma que usará um lista para armazenar os dados e outra que utilizará um arquivo texto como fonte de dados.
 _  Crie duas classes View para testar cada uma das implementações criadas. */
 
-public class PontosTuristicos extends BaseModel{
+public class PontoTuristico extends BaseModel{
     public String nome;
     public String descricao;
     public String localizacao;
 
-    public PontosTuristicos(String linha){
+    public PontoTuristico(String linha){
         String[] dados = linha.split(";");
         this.nome= dados[0];
         this.descricao = dados[1];

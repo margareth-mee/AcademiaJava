@@ -5,11 +5,11 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import P2.model.PontosTuristicos;
+import P2.model.PontoTuristico;
 
-public class PontosTuristicosDao extends BaseDao<PontosTuristicos>{
-    public PontosTuristicosDao(){
-        super("P2/dados/pontos_turistico.csv");
+public class PontoTuristicoDao extends BaseDao<PontoTuristico>{
+    public PontoTuristicoDao(){
+        super("P2/dados/pontos_turisticos.csv");
     }
 
     public ArrayList<Object> list(){  
@@ -18,7 +18,7 @@ public class PontosTuristicosDao extends BaseDao<PontosTuristicos>{
             Scanner sc = new Scanner(new File(this.filename));
             while(sc.hasNextLine()){
                 String linha = sc.nextLine(); 
-                PontosTuristicos p = new PontosTuristicos(linha);
+                PontoTuristico p = new PontoTuristico(linha);
                 pontos.add(p);
             }
             
