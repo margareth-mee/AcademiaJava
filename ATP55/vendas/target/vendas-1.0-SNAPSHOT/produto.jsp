@@ -10,7 +10,7 @@
     <h1>Cadastro de Produto</h1>
     <form action="/vendas-1/produto">
         nome <input type="text" name="nome" id="nome"> <br />
-        valor <input type="number" name="valor" id="valor"> <br />
+        valor <input type="number" name="valor" id="valor" step="0.01"> <br />
         id_categoria <input type="number" name="id_categoria" id="id_categoria"> <br />
         <input type="submit" value="Salvar">
     </form>
