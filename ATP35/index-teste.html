@@ -1,0 +1,69 @@
+<!-- _  Crie um sistema Web para manter seu perfil profissional
+_  Crie uma página principal com a estrutura do site contendo o menu e a area de conteudo.
+_  A página principal, deve possuir um menu com: resumo, experiencias, habilidades e contatos
+_  Crie uma página nova para cada item do menu.Cada página deve possuir seu próprio CSS e seu JavaScript, caso necessário.
+_  O menu deve fazer com que as paginas secundarias sejam carregadas na página principal através de javascript. -->
+<html>
+
+<head>
+    <title> Margareth Mee Gomes de Lima</title>
+    <link rel="stylesheet" href="css/inicio.css">
+    <script src="js/inicio.js"> </script>
+    <style>
+        .bg-image {
+            background-image: url("images/image3.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0px 120px;
+            /* position: relative;
+            background-attachment: fixed; */
+            width: 80%;
+            height: 100%;
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabecalho -->
+    <!--  <header>
+        <div id="logo">
+            <a href="inicio.html">
+                Início
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li onclick="Resumo()"> Resumo </li>
+                <li onclick="Experiencias()"> Experiências </li>
+                <li onclick onclick="habilidades()"> Habilidades</li>
+                <li onclick="Contatos()">Contatos</li>
+            </ul>
+        </nav> 
+    </header> -->
+
+    <!-- <img src="images/image3.jpg" width="80%" height="100%" class="center"> -->
+    <div class="bg-image">
+        <div id="cabecalho">
+            <div id="logo">
+                <a href="inicio.html">
+                    HOME
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li onclick="resumo()"> Resumo </li>
+                    <li onclick="experiencias()"> Experiências </li>
+                    <li onclick onclick="habilidades()"> Habilidades</li>
+                    <li onclick="contatos()">Contatos</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- <footer>
+    </footer> -->
+</body>
+
+</html>

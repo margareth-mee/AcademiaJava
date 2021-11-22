@@ -1,0 +1,28 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+background: #ACACAD;
+}
+
+header{
+    width: 100%;
+    background: #4B0E88;
+    height: 90px;;
+}
+
+main{
+    width: 80%;
+    margin: 50px auto;
+    background: #d0cad6;
+    height: 90px;;
+}
+
+footer{
+    width: 100%;
+    background: #683d92;
+    height: 200px;;
+}
