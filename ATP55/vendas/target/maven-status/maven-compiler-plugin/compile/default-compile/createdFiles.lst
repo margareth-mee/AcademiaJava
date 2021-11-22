@@ -1,2 +1,4 @@
-Categoria.class
-Produto.class
+com\superdevs\vendas\models\Categoria.class
+com\superdevs\vendas\servlets\ProdutoServlet.class
+com\superdevs\vendas\models\Produto.class
+com\superdevs\vendas\servlets\CategoriaServlet.class
