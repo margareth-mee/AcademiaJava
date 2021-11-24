@@ -1,0 +1,10 @@
+com\superdevs\vendas\servlets\ProdutoServlet.class
+com\superdevs\vendas\dao\ConnectionFactory.class
+com\superdevs\vendas\models\Produto.class
+com\superdevs\vendas\servlets\CategoriaReadServelet.class
+com\superdevs\vendas\dao\CategoriaDao.class
+com\superdevs\vendas\models\Categoria.class
+com\superdevs\vendas\servlets\CategoriaAlterarServlet.class
+com\superdevs\vendas\servlets\CategoriaServlet.class
+com\superdevs\vendas\servlets\CategoriaDeletarServlet.class
+com\superdevs\vendas\servlets\CategoriaBuscarIdServlet.class
