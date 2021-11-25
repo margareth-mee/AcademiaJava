@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Cadastro de Categoria</title>
 </head>
 <body>
@@ -13,7 +14,5 @@
         descricao: <input type="text" name="descricao" id="descricao"> <br />
         <input type="submit" value="Salvar"> <br />
     </form>
-
-    <a href="/vendas-1/categoria/listar"> Listar Categorias</a>
 </body>
 </html>

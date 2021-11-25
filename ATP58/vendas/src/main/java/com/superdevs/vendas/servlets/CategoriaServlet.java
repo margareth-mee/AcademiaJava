@@ -1,10 +1,10 @@
 package com.superdevs.vendas.servlets;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import com.superdevs.vendas.dao.CategoriaDao;
 import com.superdevs.vendas.models.Categoria;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -23,8 +23,12 @@ public class CategoriaServlet extends HttpServlet{
 
         cat.setId(dao.insert(cat));
         
-        PrintWriter out = resp.getWriter();
+        //PrintWriter out = resp.getWriter();
         //out.printf("Modulo Categoria - Nome = %s | Descricao %s", cat.getNome(), cat.getDescricao()); 
-        out.printf("Categoria gerada com sucesso - Id gerado %d", cat.getId());   
+        //out.printf("Categoria gerada com sucesso TESTE - Id gerado %d", cat.getId()); 
+        
+        req.setAttribute("id", cat.getId());
+        RequestDispatcher rd = req.getRequestDispatcher("categoria-sucesso.jsp");
+        rd.forward(req, resp);
     }
 }

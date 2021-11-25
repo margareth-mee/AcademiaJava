@@ -6,6 +6,7 @@ import java.io.PrintWriter;
 import com.superdevs.vendas.dao.CategoriaDao;
 import com.superdevs.vendas.models.Categoria;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -23,7 +24,11 @@ public class CategoriaDeletarServlet extends HttpServlet{
         model.setId(id);
         dao.delete(model);
 
-        PrintWriter pw = resp.getWriter();
-        pw.printf("catetegoria id = %d deletado", id);
+        //PrintWriter pw = resp.getWriter();
+        //pw.printf("catetegoria id = %d deletado", id);
+
+        RequestDispatcher rd = req.getRequestDispatcher("/deletar-sucesso.jsp");
+        req.setAttribute("id", model.getId());
+        rd.forward(req, resp);
     }
 }
