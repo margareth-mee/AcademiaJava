@@ -42,7 +42,7 @@ public class BancoApplication implements CommandLineRunner{
 	
 		/*UPDATE*/
 		System.out.println("======== UPPDATE ========");
-		model1.setId(2);
+		model1.setId(18);
 		model1.setNome("Michael Jordan"); 
 		repositoryCliente.save(model1);
 		repositoryCliente.findAll().forEach(f -> System.out.printf("Id: %d | Nome: %s\n", f.getId(), f.getNome()));
@@ -68,7 +68,7 @@ public class BancoApplication implements CommandLineRunner{
 	
 		/*UPDATE*/
 		System.out.println("======== UPPDATE ========");
-		model3.setId(2);
+		model3.setId(12);
 		model3.setNome("Michael Jordan"); 
 		repositoryAgencia.save(model3);
 		repositoryAgencia.findAll().forEach(f -> System.out.printf("Id: %d | Nome: %s\n", f.getId(), f.getNome()));
