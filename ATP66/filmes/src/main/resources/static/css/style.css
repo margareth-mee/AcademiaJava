@@ -1,0 +1,25 @@
+body{
+    background: rgb(255, 255, 255);
+}
+/* 
+.titulo{ 
+    text-transform: uppercase;
+}
+
+#genero{
+    color: rgb(55, 18, 90)
+} */
+
+.esquerda{
+    float: left;
+    margin-bottom: 1em;
+}
+main{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+form{
+    text-align: left;
+}
