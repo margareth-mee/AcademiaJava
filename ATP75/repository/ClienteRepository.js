@@ -18,7 +18,7 @@ class ClienteRepository{
 
     async delete(id){
         return await ClienteTable.destroy({
-            where:{id:id} 
+            where:{id:parseInt(id)} 
         }); 
     }
 }

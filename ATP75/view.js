@@ -1,19 +1,8 @@
-import Cliente from './model/Cliente.js'
-import ClienteRepository from './repository/ClienteRepository.js'
+import bodyParser from 'body-parser'
+import Express from 'express'
+import ClienteApi from './api/ClienteApi.js';
 
-console.log("============ Banco ===============")
-const c1 = new Cliente();
-c1.nome = "Jojo2";
-c1.sobrenome = "Calypson";
-
-const rep = new ClienteRepository();
-
-console.log(await rep.create(c1));
-
-c1.id = 20;
-c1.nome = "Teste5";
-c1.sobrenome = "Update5";
-
-console.log(await rep.update(c1));
-console.log(await rep.delete(20));
-console.log(await rep.findAll());
+const api = Express();
+api.use(bodyParser.json());
+api.listen(3020, ()=>console.log('running...'));
+api.use('/api/cliente', ClienteApi);
