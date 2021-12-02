@@ -1,12 +1,12 @@
 {
-  "name": "atp71",
+  "name": "atp72",
   "version": "1.0.0",
-  "description": "poo",
-  "main": "testes.js",
+  "description": "",
+  "main": "view.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "margareth-mee",
+  "author": "",
   "license": "ISC",
   "type": "module"
 }
