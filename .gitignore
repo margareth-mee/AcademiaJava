@@ -1,6 +1,7 @@
 #intelliJfiles
 .idea
 out
+node_modules
 
 # Compiled class file
 *.class
