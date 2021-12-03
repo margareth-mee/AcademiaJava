@@ -6,7 +6,6 @@ import com.superdevs.filmes.model.Filme;
 import com.superdevs.filmes.repository.FilmeRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,19 +16,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController /* vai receber e responder no formato json */
-@RequestMapping("/api/filme") /* para não precisar colocar o endereço dentro de cada método */ 
+@RequestMapping("/api/filme")
 public class FilmeApi {
   
     @Autowired
     private FilmeRepository repository;
     
     @GetMapping
-    public List<Filme> filmes(){
-        List<Filme> lista = (List<Filme>)repository.findAll(Sort.by(Sort.Direction.ASC, "id"));
-        return lista;        
+    public List<Filme> filmes(String nome){
+        if( nome!= null){
+            return (List<Filme>)repository.findByNome(nome);
+        }
+        return(List<Filme>)repository.findAll();        
     }
 
-    @PostMapping    
+    @PostMapping   
     public String salvar(@RequestBody Filme model){
         repository.save(model);
         return "salvo com sucesso";
